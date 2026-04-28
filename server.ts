@@ -2,12 +2,22 @@ import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
 import fs from "fs";
+import cors from "cors"; // 1. IMPORTÁLD A CORS-T
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  
+  // 2. DINAMIKUS PORT (Rendernek kötelező)
+  const PORT = process.env.PORT || 3000;
 
+  // 3. CORS ENGEDÉLYEZÉSE (Hogy a GitHub Pages-ről átjöjjön az üzenet)
+  app.use(cors());
   app.use(express.json());
+
+  // 4. HEALTH CHECK (UptimeRobotnak, hogy ne aludjon el a szerver)
+  app.get("/health", (req, res) => {
+    res.status(200).send("OK");
+  });
 
   // API route a támogatási üzenetekhez
   app.post("/api/support", (req, res) => {
@@ -16,21 +26,22 @@ async function startServer() {
       return res.status(400).json({ error: "No message provided" });
     }
 
-    const timestamp = new Date().toISOString();
+    const timestamp = new Date().toLocaleString();
     const logEntry = `[${timestamp}] ${message}\n---\n`;
 
-    // Hozzáfűzés a support.txt fájlhoz
+    // Renderen a process.cwd() jó, de konzolba is írjuk ki, hogy lásd a logban!
+    console.log("ÚJ SUPPORT ÜZENET érkezett:", logEntry);
+
     fs.appendFile(path.join(process.cwd(), "support.txt"), logEntry, (err) => {
       if (err) {
         console.error("Hiba a fájlba íráskor:", err);
         return res.status(500).json({ error: "Szerver hiba" });
       }
-      console.log("Üzenet elmentve a support.txt-be.");
       res.json({ success: true });
     });
   });
 
-  // Vite middleware fejlesztéshez
+  // Vite middleware
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
@@ -45,8 +56,9 @@ async function startServer() {
     });
   }
 
+  // 5. '0.0.0.0' HASZNÁLATA (Hogy a Render kívülről is lássa)
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Szerver fut: http://localhost:${PORT}`);
+    console.log(`Szerver élesítve a ${PORT} porton.`);
   });
 }
 
