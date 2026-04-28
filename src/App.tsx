@@ -220,10 +220,10 @@ export default function App() {
     try {
       // A "valami" helyére írd be a saját Renderes azonosítódat!
 const response = await fetch('https://markwhislist.onrender.com/api/support', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ message: supportMessage }),
-});
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: supportMessage }),
+      });
       if (!response.ok) throw new Error('Hiba történt');
       
       setSending(false);
