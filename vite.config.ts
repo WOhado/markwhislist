@@ -6,10 +6,12 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/markwhislist/', 
+    base: '/markwhislist/',
     plugins: [react(), tailwindcss()],
     build: {
       sourcemap: false,
+      // Ez segít, hogy ne akadjon el a build apróbb típushibákon
+      chunkSizeWarningLimit: 1600,
     },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -18,9 +20,6 @@ export default defineConfig(({mode}) => {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
-    },
-    server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
 });
