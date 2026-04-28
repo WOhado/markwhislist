@@ -5,16 +5,14 @@ import {defineConfig, loadEnv} from 'vite';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
+  const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
   return {
-    // EZT ÍRD ÁT:
-    base: '/', 
+    base: isGitHubPages ? '/markwhislist/' : '/', 
     plugins: [react(), tailwindcss()],
     build: {
       sourcemap: false,
       chunkSizeWarningLimit: 1600,
-    },
-    define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
     resolve: {
       alias: {
