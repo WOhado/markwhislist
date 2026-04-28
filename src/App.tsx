@@ -20,7 +20,7 @@ const GAMES: Game[] = [
     description: 'Az **Apex Point** egy nyílt világú játék, amelynek célja, hogy elmerítsen a japán autós kultúrában: a testreszabási lehetőségek és versenytípusok hatalmas választékával biztosítja, hogy a saját utadat járhasd.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2102520/library_600x900_2x.jpg?t=1754510815',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2102520/library_hero_2x.jpg?t=1754510815',
-    downloadLink: '/games/apex-point.zip',
+    downloadLink: 'games/apex-point.zip',
     instructions: [
       'Töltse le az Apex Point-ot a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -35,7 +35,7 @@ const GAMES: Game[] = [
     description: 'Az **Assetto Corsa EVO** újradefiniálja a realizmust és a funkciókat minden idők egyik legnépszerűbb többplatformos autószimulációjában. Különböző kategóriájú autókat és pályákat kínál, felölelve az autózás történelmének számos korszakát.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/3058630/library_600x900_2x.jpg?t=1764776600',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/3058630/library_hero_2x.jpg?t=1764776600',
-    downloadLink: '/games/assetto-corsa-evo.zip',
+    downloadLink: 'games/assetto-corsa-evo.zip',
     instructions: [
       'Töltse le az Assetto Corsa Evo-ot a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -52,7 +52,7 @@ const GAMES: Game[] = [
     description: 'Ide nem tudom mit írjak gondolom ez valami +mapot ad hozzá vagy nem tudom mit whistleteztél. *Megjegyzés: nem biztos működnek a dlck mivel online játék ez.*',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/635260/cc7b938a66632bb35eef30bd1e1c097a16c96810/library_600x900_2x.jpg?t=1760100581',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/635260/f9042f444521a002f20cc61f11d7b459d713685e/library_hero_2x.jpg?t=1760100581',
-    downloadLink: '/games/carx-drift-dlc.zip',
+    downloadLink: 'games/carx-drift-dlc.zip',
     instructions: [
       'Töltse le az CarX Drift Racing Online DLC-it a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -69,7 +69,7 @@ const GAMES: Game[] = [
     description: 'A **The Binding of Isaac** egy véletlenszerűen generált akció-RPG shooter, erős roguelike elemekkel. Isaac útját követve a játékosok bizarr kincsekre bukkanhatnak, amelyek megváltoztatják Isaac formáját, emberfeletti képességekkel ruházva fel őt. Ez lehetővé teszi számára, hogy titkokat fedezzen fel, és rejtélyes teremtmények hadain áttörve küzdje magát a biztonság felé.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/250900/library_600x900_2x.jpg?t=1722458407',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/250900/library_hero.jpg?t=1722458407',
-    downloadLink: '/games/isaac-rebirth.zip',
+    downloadLink: 'games/isaac-rebirth.zip',
     instructions: [
       'Töltse le a The Binding of Isaac: Rebirth-öt a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -86,7 +86,7 @@ const GAMES: Game[] = [
     description: 'Alkosd meg a saját utadat a **Hollow Knightban**! Egy epikus akció-kaland vár a rovarok és hősök hatalmas, romos királyságán keresztül. Fedezz fel kanyargós barlangokat, harcolj megfertőzött lényekkel és köss barátságot különös bogarakkal – mindezt klasszikus, kézzel rajzolt 2D-s stílusban.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg?t=1695270300',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/367520/library_hero.jpg?t=1695270300',
-    downloadLink: '/games/hollow-knight.zip',
+    downloadLink: 'games/hollow-knight.zip',
     instructions: [
       'Töltse le a Hollow Knight-ot a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -103,7 +103,7 @@ const GAMES: Game[] = [
     description: 'A klasszikus Stephen King-thriller nem hivatalos, gyerekbarát változata (vagy talán mégsem, lehet, hogy ez csak egy játék egyfejű kecskebébikről).',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2575900/library_600x900_2x.jpg?t=1697518121',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2575900/library_hero_2x.jpg?t=1697518121',
-    downloadLink: '/games/corn-kidz-64.zip',
+    downloadLink: 'games/corn-kidz-64.zip',
     instructions: [
       'Töltse le a Corn Kidz 64-et a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -118,7 +118,7 @@ const GAMES: Game[] = [
     description: 'Fedezd fel az 1980-as évek Japánjának dekadenciáját és veszélyeit, miközben tűzön-vizen át küzdesz a neonfényes szórakoztatónegyedekben a Yakuza-legendákat megteremtő akció-kaland bűnügyi dráma definitív kiadásában.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/638970/library_600x900_2x.jpg?t=1716363782',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/638970/library_hero_2x.jpg?t=1716363782',
-    downloadLink: '/games/yakuza-0.zip',
+    downloadLink: 'games/yakuza-0.zip',
     instructions: [
       'Töltse le a Yakuza 0-t a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -135,7 +135,7 @@ const GAMES: Game[] = [
     description: 'A Kojima Productions és a PlatinumGames által fejlesztett **METAL GEAR RISING: REVENGEANCE** egy teljesen új akcióélménnyel repíti izgalmas, eddig ismeretlen területre a neves METAL GEAR franchise-t. A játék zökkenőmentesen ötvözi a tiszta akciót és az epikus történetmesélést, melynek középpontjában Raiden áll – egy egykori gyerekkatona, akiből félig ember, félig cyborg nindzsa vált. Raiden nagyfrekvenciás katanájával mindent és mindenkit kettészel, ami bosszúszomjas útjába áll!',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/235460/library_600x900_2x.jpg?t=1677658058',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/235460/library_hero_2x.jpg?t=1677658058',
-    downloadLink: '/games/mgr-revengeance.zip',
+    downloadLink: 'games/mgr-revengeance.zip',
     instructions: [
       'Töltse le a Metal Gear Rising: Revengeance-ot a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -152,7 +152,7 @@ const GAMES: Game[] = [
 description: 'Teto forever!!! (ezt csak a kedvetér amúgy MAI és RIAS FOREVER!!!!!)',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/3301060/bb38fffd1573ff09922f1c0cb6ef15ae59c6bf5c/library_600x900_2x.jpg?t=1759981135',
     heroImage: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681410/25a84a3b58c1710a4b0884a6bd44c2b0b5579248/header.jpg?t=1754537110',
-    downloadLink: '/games/desktop-teto.zip',
+    downloadLink: 'games/desktop-teto.zip',
     instructions: [
       'Töltse le a Desktop Mate Teto DLC-t a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
@@ -169,8 +169,8 @@ description: 'Teto forever!!! (ezt csak a kedvetér amúgy MAI és RIAS FOREVER!
     description: 'A **Pragmata** egy egyedülálló, sci-fi akció-kalandjáték a Capcomtól. Kövesd Hugh-t, egy balsorsú nyomozócsoport tagját, és Dianát, a fiatal androidot, amint egy lázadó mesterséges intelligencia által átvett holdbázison navigálnak keresztül, miközben a Földre vezető utat keresik.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/3357650/ffe0d0b1778821e7e63b0a57ee8a16b8ab749497/library_600x900_2x.jpg?t=1749097394',
     heroImage: 'https://cdn2.steamgriddb.com/hero_thumb/0b9f166f1f75217d3a28dc96e53eecfb.jpg',
-    downloadLink: '/games/pragmata.zip',
-    fixDownloadLink: '/games/PRAGMATA_3357650_MainShin02_1777325041986.zip',
+    downloadLink: 'games/pragmata.zip',
+    fixDownloadLink: 'games/PRAGMATA_3357650_MainShin02_1777325041986.zip',
     instructions: [
       'Töltse le a Pragmata a játék letöltés gombot.',
       'Csomagold ki a .zip fájlt.',
