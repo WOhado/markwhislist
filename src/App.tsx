@@ -229,7 +229,7 @@ const response = await fetch('https://markwhislist.onrender.com/api/support', {
       setSending(false);
       setSupportMessage('');
       setShowSupport(false);
-      alert('Üzenet elmentve a support.txt-be!');
+      alert('Üzenet elküldve!');
     } catch (err) {
       console.error(err);
       alert('Hiba történt az elküldés során.');
