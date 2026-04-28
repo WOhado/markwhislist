@@ -6,11 +6,11 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/markwhislist/',
+    // EZT ÍRD ÁT:
+    base: '/', 
     plugins: [react(), tailwindcss()],
     build: {
       sourcemap: false,
-      // Ez segít, hogy ne akadjon el a build apróbb típushibákon
       chunkSizeWarningLimit: 1600,
     },
     define: {
