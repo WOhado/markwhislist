@@ -20,7 +20,7 @@ const GAMES: Game[] = [
     description: 'Az **Apex Point** egy nyílt világú játék, amelynek célja, hogy elmerítsen a japán autós kultúrában: a testreszabási lehetőségek és versenytípusok hatalmas választékával biztosítja, hogy a saját utadat járhasd.',
     capsuleImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2102520/library_600x900_2x.jpg?t=1754510815',
     heroImage: 'https://shared.steamstatic.com/store_item_assets/steam/apps/2102520/library_hero_2x.jpg?t=1754510815',
-    downloadLink: '/games/apex-point.zip',
+    downloadLink: 'https://github.com/WOhado/markwhislist/raw/main/games/apex-point.zip',
     instructions: [
       'Töltse le az Apex Point-ot a játék letöltés gombra kattintva.',
       'Csomagold ki a .zip fájlt.',
